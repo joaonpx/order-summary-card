@@ -1,0 +1,156 @@
+/* ======================== geral ==================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+
+  font-size: 62.5%; /* 10px = 1rem */
+}
+
+body {
+  height: 100vh;
+
+  background: var(--pale-blue);
+  color: var(--desaturated-blue);
+
+  font-family: 'Red Hat Display', sans-serif;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* ======================== card ==================================== */
+.card-container {
+  background: #fff;
+
+  width: 32rem;
+
+  border-radius: 2rem;
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  text-align: center;
+
+  padding: 0 2.5rem 3rem 2.5rem;
+}
+
+.hero-image {
+  width: 32rem;
+
+  border-radius: 2rem 2rem 0 0;
+
+  margin-bottom: 3rem;
+}
+
+.card-content h1 {
+  color: var(--dark-blue);
+
+  font-size: 2.2rem;
+  font-weight: 900;
+
+  margin-bottom: 1.7rem;
+}
+
+.card-content p {
+  font-size: 1.5rem;
+  line-height: 1.7;
+
+  margin-bottom: 2.5rem;
+}
+
+.card-content a.btn-payment {
+  color: #fff;
+
+  background: var(--bright-blue);
+
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  width: 27rem;
+
+  border-radius: 1rem;
+  box-shadow: 0 1.5rem 2rem hsla(245, 75%, 52%, 0.2);
+
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.card-content a.btn-cancel {
+  color: var(--desaturated-blue);
+
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* ======================== plan ==================================== */
+
+.plan-container {
+  background: var(--very-pale-blue);
+
+  border-radius: 1rem;
+
+  margin-bottom: 2.5rem;
+}
+
+.plan-content {
+  padding: 1.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plan-info {
+  margin: 0 3rem 0 0;
+}
+
+.plan-info .plan-type {
+  color: var(--dark-blue);
+
+  line-height: 1.7;
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+
+.plan-info .plan-value {
+  font-size: 1.4rem;
+}
+
+.plan-content a.btn-change {
+  color: var(--bright-blue);
+
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
+/* ======================== footer ==================================== */
+
+.attribution {
+  color: var(--primary-color);
+  font-size: 1.1rem;
+
+  margin-top: 8rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+
+  text-decoration: none;
+}
