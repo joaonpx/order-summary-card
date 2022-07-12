@@ -72,6 +72,7 @@ body {
   line-height: 1.7;
 
   margin-bottom: 2.5rem;
+  margin-inline: 1rem;
 }
 
 .card-content a.btn-payment {
@@ -81,7 +82,8 @@ body {
 
   margin-bottom: 2rem;
   padding: 1.5rem;
-  width: 27rem;
+  /* width: 27rem; */
+  width: 100%;
 
   border-radius: 1rem;
   box-shadow: 0 1.5rem 2rem hsla(245, 75%, 52%, 0.2);
@@ -119,30 +121,46 @@ body {
   border-radius: 1rem;
 
   margin-bottom: 2.5rem;
+  width: 100%;
 }
 
 .plan-content {
   padding: 1.5rem;
 
+  text-align: center;
+
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
-.plan-info {
-  margin: 0 3rem 0 0;
+.plan-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.plan-info .plan-type {
+.plan-info-content {
+  margin: 0 0 0 2rem;
+}
+
+.plan-info-content .plan-type {
   color: var(--dark-blue);
 
-  line-height: 1.7;
+  line-height: 1.5;
+
   font-size: 1.4rem;
   font-weight: 900;
+
+  margin-bottom: 0;
+  margin-inline: 0;
 }
 
-.plan-info .plan-value {
+.plan-info-content .plan-value {
   font-size: 1.4rem;
+
+  margin-bottom: 0;
+  margin-inline: 0;
 }
 
 .plan-content a.btn-change {
@@ -162,13 +180,47 @@ body {
 /* ======================== footer ==================================== */
 
 .attribution {
-  color: var(--primary-color);
+  color: var(--desaturated-blue);
   font-size: 1.1rem;
 
   margin-top: 8rem;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--bright-blue);
 
   text-decoration: none;
+}
+
+/* ======================== responsive ==================================== */
+
+@media (min-width: 1024px) {
+  .card-container {
+    width: 42rem;
+  }
+
+  .card-content {
+    padding: 0 4rem 4.5rem 4rem;
+  }
+
+  .card-content h1 {
+    font-size: 2.8rem;
+  }
+
+  .hero-image {
+    width: 42rem;
+    margin-bottom: 4.5rem;
+  }
+
+  .card-content p {
+    margin-bottom: 1.7rem;
+    margin-inline: 2rem;
+  }
+
+  .plan-content {
+    padding: 2rem;
+  }
+
+  .icon-music {
+    width: 4.5rem;
+  }
 }
