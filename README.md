@@ -1,9 +1,9 @@
 <h1 align="center">
-  🎧 <b>Order summary card solution</b>
+  🎧 <b>Order summary card</b>
 </h1>
 
 <p align="center">
-  <img alt="Order summary card solution" src="./design/desktop-preview.jpg" width="100%">
+  <img alt="Order summary card" src="./design/desktop-preview.jpg" width="100%">
 </p>
 
 ## 🚀 Built with
