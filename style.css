@@ -19,7 +19,10 @@
 body {
   height: 100vh;
 
-  background: var(--pale-blue);
+  background: url('./images/pattern-background-mobile.svg');
+  background-color: var(--pale-blue);
+  background-repeat: no-repeat;
+  background-size: 100%;
   color: var(--desaturated-blue);
 
   font-family: 'Red Hat Display', sans-serif;
@@ -194,6 +197,12 @@ body {
 /* ======================== responsive ==================================== */
 
 @media (min-width: 1024px) {
+  body {
+    background: url('./images/pattern-background-desktop.svg');
+    background-color: var(--pale-blue);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
   .card-container {
     width: 42rem;
   }
